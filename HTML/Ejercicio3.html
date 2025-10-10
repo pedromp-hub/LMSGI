@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio3</title>
 </head>
 <body>
-    
+    <h2> Información Personal</h2>
+    <form>
+        <Label for="fname">Nombre:</Label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="ffecha">Fecha de nacimiento</label><br>
+        <input type="date" id="ffecha" name="ffecha" required><br>
+
+        <p> Género </p>
+        <input type="radio" id="Femenino" name="Genero" value="Femenino" required>
+        <label for="Femenino">Femenino</label><br>
+        <input type="radio" id="Masculino" name="Genero" value="Masculino" required>
+        <label for="Masculino">Masculino</label><br>
+         <input type="radio" id="Otro" name="Genero" value="Otro" required>
+        <label for="Otro">Otro</label><br>
+
+    <h2> Información de contacto</h2>
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br>
+        <br>
+        <label for="telefono"> Número Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br>
+        <br>
+        <label for="direccion">Dirección</label><br>
+        <textarea></textarea>
+
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>

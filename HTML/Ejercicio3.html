@@ -6,8 +6,9 @@
     <title>Ejercicio3</title>
 </head>
 <body>
-    <h2> Información Personal</h2>
     <form>
+        <fieldset>
+            <legend>Información Personal</legend>
         <Label for="fname">Nombre:</Label><br>
         <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Apellido:</label><br>
@@ -15,15 +16,18 @@
         <label for="ffecha">Fecha de nacimiento</label><br>
         <input type="date" id="ffecha" name="ffecha" required><br>
 
-        <p> Género </p>
+        <p> Género: </p>
         <input type="radio" id="Femenino" name="Genero" value="Femenino" required>
         <label for="Femenino">Femenino</label><br>
         <input type="radio" id="Masculino" name="Genero" value="Masculino" required>
         <label for="Masculino">Masculino</label><br>
-         <input type="radio" id="Otro" name="Genero" value="Otro" required>
+        <input type="radio" id="Otro" name="Genero" value="Otro" required>
         <label for="Otro">Otro</label><br>
 
-    <h2> Información de Contacto</h2>
+        </fieldset>
+   
+        <fieldset>
+            <legend>Información de Contacto</legend>
         <label for="correo">Correo Electrónico:</label><br>
         <input type="email" id="correo" name="correo" required><br>
         <br>
@@ -31,17 +35,38 @@
         <input type="tel" id="telefono" name="telefono" required><br>
         <br>
         <label for="direccion">Dirección</label><br>
-        <textarea></textarea>
+        <textarea id="direccion" name="direccion" required></textarea>
 
-    <h2> Información de Cuenta</h2>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Cuenta</legend>
         <label for="fname">Nombre de usuario: </label><br>
         <input type="text" id="fname" name="fname" required><br>
+        <br>
         <label for="contraseña">Contraseña: </label><br>
         <input type="password" id="contraseña" name="contraseña" required><br>
+        <br>
         <label for="confirmacion">Confirmación contraseña: </label><br>
         <input type="password" id="confirmacion" name="confirmacion" required><br>
 
+        </fieldset>
 
+        <fieldset>
+            <legend>Preferencias</legend>
+        <label for="colorfavorito">Color Favorito: </label><br>
+        <select id="colorfavorito" name="colorfavorito" required>
+            <option value=""></option>-- Seleciona un color --</option>
+            <option value="rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+            <option value="Amarillo">Amarillo</option>
+        </select><br>
+        <br>
+        <label for="Aceptarterminosycondiciones">Aceptar Términos y Condiciones</label><br>
+        <input type="checkbox" id="acepto" name="acepto" required><br>
+
+        </fieldset>
 
         <p><input type="submit" value="Enviar"></p>
     </form>

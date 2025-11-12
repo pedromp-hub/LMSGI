@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Pedro Montero">
+    <title>Ejercicio 1</title>
+<style>
+    .cta-container{
+    background-image: url(imagen1.png); /* Dirección imagen */
+    background-repeat: no-repeat;
+    background-position: center; /* Posicion de imagen */
+    background-attachment: scroll; /* Mover imagen con el raton bajando */
+    background-size: cover; 
+   
+    height: 100vh; /* tamaño de la imagen de alto */
+    display: flex; 
+    align-items: center; /* Poner todo en el centro */
+    justify-content: center; /* Alineación del texto */
+    flex-direction: column; /* Poner el contenido en modo columna */
+}
+    .cta-text{
+        font-size: 28px; /* Tamaño de las letras */
+        color: black; /* Color de las letras */
+        font-weight: bold; /* Ponerlo en negrita */ 
+
+    }
+
+    .cta-button{
+        background-color: #626bb2; /* Color del fondo boton */
+        color: white; /* Color texto */
+        padding: 15px 30px; /*Relleno del boton */
+        font-size: 20px; /*Tamaño letra */
+        text-transform: uppercase; /* texto mayusculas */
+        border: none; /* Quitar bordes */
+        border-radius: 5px; /*Grosor de los bordes */
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="cta-container">
+    <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+    <p  class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+    <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+</body>
+</html>

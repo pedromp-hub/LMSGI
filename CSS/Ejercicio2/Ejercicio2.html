@@ -7,22 +7,31 @@
     <title>Ejercicio2</title>
 </head>
 <style>
+    *{
+        margin:0;
+        padding:0;
+    }
     nav{
         background-color: blanchedalmond;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+    nav img{
+        padding-left: 15px;
     }
     .nav-list{
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        gap: 2px;
+        gap: 20px;
     }
     .nav-list a{
         text-decoration: none;
         color: brown;
         font-size: 20px;
-        padding: 25px 15px;
+        padding-right: 15px;
     }
     .nav-list a:hover{
         color: black;
@@ -30,6 +39,7 @@
 </style>
 <body>
     <nav>
+        <img src="desserts.png" alt="Imagen en proceso de carga" width="50" height="50">
         <ul class="nav-list">
             <li><a href="#inicio"> Home</a></li>
             <li><a href="#About"> About</a></li>

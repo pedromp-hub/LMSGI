@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Pedro Montero Pelegrina">
+    <title>Ejercicio7</title>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: brown;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+        nav h1 {
+            color: white;
+        }
+        .nav-list{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 20px;
+        }
+        .nav-list a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding-right: 15px;
+        }
+        .nav-list a:hover{
+            color: beige;
+        }
+        .cta-container{
+    background-image: url(gallery-1.jpg); /* Dirección imagen */
+    background-repeat: no-repeat;
+    background-position: center; /* Posicion de imagen */
+    background-attachment: scroll; /* Mover imagen con el raton bajando */
+    background-size: cover; 
+   
+    height: 100vh; /* tamaño de la imagen de alto */
+    display: flex; 
+    align-items: center; /* Poner todo en el centro */
+    justify-content: center; /* Alineación del texto */
+    flex-direction: column; /* Poner el contenido en modo columna */
+}
+    .cta-text{
+        font-size: 28px; /* Tamaño de las letras */
+        color: white; /* Color de las letras */
+        font-weight: bold; /* Ponerlo en negrita */ 
+        padding-bottom: 15px;
+
+    }
+
+    .cta-button{
+        background-color: brown; /* Color del fondo boton */
+        color: white; /* Color texto */
+        padding: 15px 30px; /*Relleno del boton */
+        font-size: 20px; /*Tamaño letra */
+        text-transform: uppercase; /* texto mayusculas */
+        border: none; /* Quitar bordes */
+        border-radius: 5px; /*Grosor de los bordes */
+
+    }
+    #gallery-section .section-tittle {
+            text-align: center;
+            padding: 10px 10px;
+            font-size: 2rem;
+        }
+
+        #gallery-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+
+        }
+
+        #gallery-section .gallery-list .gallery-item {
+            width: calc(100%/3 - 32px);
+        }
+
+        #gallery-section .gallery-list .gallery-item .gallery-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+         #gallery-section {
+            background-color: burlywood;
+        }
+
+        #gallery-section .section-tittle {
+            text-align: center;
+            padding: 10px 10px;
+            font-size: 2rem;
+            padding: 20px;
+        }
+
+        #gallery-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+
+        }
+
+        #gallery-section .gallery-list .gallery-item {
+            width: calc(100%/3 - 32px);
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+            padding-bottom: 35px;
+        }
+
+        #gallery-section .gallery-list .gallery-item .gallery-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 8px;
+            justify-content: center;
+        }
+
+        #gallery-section .gallery-list .gallery-item .titulo-card {
+            text-align: center;
+
+        }
+        #footer .hiper {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .main-footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 20px 20px;
+            padding-right: 90px;
+            padding-left: 90px;
+        }
+</style>
+</head>
+<nav>
+        <h1>Coffee</h1>
+        <ul class="nav-list">
+            <li><a href="#Inicio"> Inicio</a></li>
+            <li><a href="#Servicios"> Servicios</a></li>
+            <li><a href="#Nosotros"> Nosotros</a></li>
+            <li><a href="#Contacto"> Contacto</a></li>
+        </ul>
+    </nav>
+<body>
+    <div class="cta-container">
+    <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+    <p  class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+    <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+    <section id="gallery-section">
+        <h2 class="section-tittle">Galeria de imagenes</h2>
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-1.jpg" alt="En proceso de carga">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-2.jpg" alt="En proceso de carga">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-3.jpg" alt="En proceso de carga">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-4.jpg" alt="En proceso de carga">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-5.jpg" alt="En proceso de carga">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes/gallery-6.jpg" alt="En proceso de carga">
+            </div>
+        </div>
+    </section>
+    <section id="gallery-section">
+        <h2 class="section-tittle">Nuestro Menú</h2>
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes2/refreshment.png" alt="En proceso de carga">
+                <h2 class="titulo-card">Batido de fresa</h2>
+                <p class="titulo-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, unde vero
+                    doloribus quam aspernatur velit magni in perferendis voluptatum deleniti rerum vel sit quis itaque
+                    nesciunt fugiat distinctio quibusdam inventore.</p>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes2/hot-beverages.png" alt="En proceso de carga">
+                <h2 class="titulo-card">Café con leche</h2>
+                <p class="titulo-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                    consequuntur, voluptatum ex atque laudantium saepe tempora molestias quas inventore vero mollitia.
+                    Sed aspernatur dolorum voluptatibus enim quibusdam provident suscipit tempora.</p>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="Imagenes2/coffee-hero-section.png" alt="En proceso de carga">
+                <h2 class="titulo-card">Café solo</h2>
+                <p class="titulo-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, architecto
+                    modi nemo, amet, corporis voluptatum voluptate iusto sequi dolor accusantium at cumque error quam
+                    repellat perferendis expedita quas! Et, in.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <section id="footer">
+            <p class="hiper">2025 Coffe Shop</p>
+        </section>
+        <section id="footer">
+            <a class="hiper" href="ejemplo.com"> Privacy policy</a>
+            <a class="hiper" href="ejemplo.com"> Refund policy</a>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Autor" content="Pedro Montero Pelegrina">
     <title>Ejercicio7</title>
-<style>
-    *{
+    <style>
+        * {
             margin: 0;
             padding: 0;
         }
+
         nav {
             background-color: brown;
             display: flex;
@@ -17,56 +19,80 @@
             padding: 20px;
             align-items: center;
         }
+
         nav h1 {
             color: white;
         }
-        .nav-list{
+
+        .nav-list {
             display: flex;
             flex-direction: row;
             list-style-type: none;
             gap: 20px;
         }
-        .nav-list a{
+
+        .nav-list a {
             color: white;
             text-decoration: none;
             font-size: 20px;
             padding-right: 15px;
         }
-        .nav-list a:hover{
+
+        .nav-list a:hover {
             color: beige;
         }
-        .cta-container{
-    background-image: url(gallery-1.jpg); /* Dirección imagen */
-    background-repeat: no-repeat;
-    background-position: center; /* Posicion de imagen */
-    background-attachment: scroll; /* Mover imagen con el raton bajando */
-    background-size: cover; 
-   
-    height: 100vh; /* tamaño de la imagen de alto */
-    display: flex; 
-    align-items: center; /* Poner todo en el centro */
-    justify-content: center; /* Alineación del texto */
-    flex-direction: column; /* Poner el contenido en modo columna */
-}
-    .cta-text{
-        font-size: 28px; /* Tamaño de las letras */
-        color: white; /* Color de las letras */
-        font-weight: bold; /* Ponerlo en negrita */ 
-        padding-bottom: 15px;
 
-    }
+        .cta-container {
+            background-image: url(gallery-1.jpg);
+            /* Dirección imagen */
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Posicion de imagen */
+            background-attachment: scroll;
+            /* Mover imagen con el raton bajando */
+            background-size: cover;
 
-    .cta-button{
-        background-color: brown; /* Color del fondo boton */
-        color: white; /* Color texto */
-        padding: 15px 30px; /*Relleno del boton */
-        font-size: 20px; /*Tamaño letra */
-        text-transform: uppercase; /* texto mayusculas */
-        border: none; /* Quitar bordes */
-        border-radius: 5px; /*Grosor de los bordes */
+            height: 100vh;
+            /* tamaño de la imagen de alto */
+            display: flex;
+            align-items: center;
+            /* Poner todo en el centro */
+            justify-content: center;
+            /* Alineación del texto */
+            flex-direction: column;
+            /* Poner el contenido en modo columna */
+        }
 
-    }
-    #gallery-section .section-tittle {
+        .cta-text {
+            font-size: 28px;
+            /* Tamaño de las letras */
+            color: white;
+            /* Color de las letras */
+            font-weight: bold;
+            /* Ponerlo en negrita */
+            padding-bottom: 15px;
+
+        }
+
+        .cta-button {
+            background-color: brown;
+            /* Color del fondo boton */
+            color: white;
+            /* Color texto */
+            padding: 15px 30px;
+            /*Relleno del boton */
+            font-size: 20px;
+            /*Tamaño letra */
+            text-transform: uppercase;
+            /* texto mayusculas */
+            border: none;
+            /* Quitar bordes */
+            border-radius: 5px;
+            /*Grosor de los bordes */
+
+        }
+
+        #gallery-section .section-tittle {
             text-align: center;
             padding: 10px 10px;
             font-size: 2rem;
@@ -89,7 +115,8 @@
             height: 100%;
             border-radius: 8px;
         }
-         #gallery-section {
+
+        #gallery-section {
             background-color: burlywood;
         }
 
@@ -127,10 +154,12 @@
             text-align: center;
 
         }
+
         #footer .hiper {
             color: white;
             font-family: 'Times New Roman', Times, serif;
         }
+
         .main-footer {
             display: flex;
             justify-content: space-between;
@@ -139,22 +168,23 @@
             padding-right: 90px;
             padding-left: 90px;
         }
-</style>
+    </style>
 </head>
 <nav>
-        <h1>Coffee</h1>
-        <ul class="nav-list">
-            <li><a href="#Inicio"> Inicio</a></li>
-            <li><a href="#Servicios"> Servicios</a></li>
-            <li><a href="#Nosotros"> Nosotros</a></li>
-            <li><a href="#Contacto"> Contacto</a></li>
-        </ul>
-    </nav>
+    <h1>Coffee</h1>
+    <ul class="nav-list">
+        <li><a href="#Inicio"> Inicio</a></li>
+        <li><a href="#Servicios"> Servicios</a></li>
+        <li><a href="#Nosotros"> Nosotros</a></li>
+        <li><a href="#Contacto"> Contacto</a></li>
+    </ul>
+</nav>
+
 <body>
     <div class="cta-container">
-    <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
-    <p  class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
-    <button class="cta-button">Descubrir Ofertas</button>
+        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+        <p class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+        <button class="cta-button">Descubrir Ofertas</button>
     </div>
     <section id="gallery-section">
         <h2 class="section-tittle">Galeria de imagenes</h2>
@@ -215,4 +245,5 @@
         </section>
     </footer>
 </body>
+
 </html>

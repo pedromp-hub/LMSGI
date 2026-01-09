@@ -1,3 +1,37 @@
 *{
     margin:0;
+    font-family: Arial,sans-serif;
+    padding: 0;
+    color: #343a40;
+}
+
+nav{
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav .logo {
+   text-decoration: none;
+   font-size: 1.6em;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+nav ul li a{
+    font-size: 1.2em;
+    text-align: right;
+    display: flex;
+    text-decoration: none;
+    
 }

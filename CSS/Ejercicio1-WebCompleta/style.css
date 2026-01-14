@@ -112,10 +112,29 @@ nav ul a:hover{
 
 .contact-container h2{
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-container label{
     display: grid;
     grid-template-columns: 1fr;
     
+}
+
+.contact-container .dist{
+    width: 500px;
+    height: 30px;
+    background-color: #f1f3f5;
+}
+
+.contact-container button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    background-color: #007bff;
+    color: #f8f9fa;
+    height: 30px;
 }

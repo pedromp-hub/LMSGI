@@ -24,14 +24,98 @@ nav .logo {
 nav ul{
     display: flex;
     gap: 25px;
-    text-decoration: none;
     list-style-type:none;
+    font-size: 1.2em;
 }
 
-nav ul li a{
+nav ul .home{
+    list-style-type: none;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 3px; /*GROSOR LINEA*/
+    text-underline-offset: 20px; /*Distancia de alejado de la linea*/
+}
+
+nav ul .about{
+    list-style-type: none;
+    text-decoration-color: #32cd32;
+    text-decoration-thickness: 3px; /*GROSOR LINEA*/
+    text-underline-offset: 20px; /*Distancia de alejado de la linea*/
+}
+
+nav ul .services{
+    list-style-type: none;
+    text-decoration-color: #8a2be2;
+    text-decoration-thickness: 3px; /*GROSOR LINEA*/
+    text-underline-offset: 20px; /*Distancia de alejado de la linea*/
+}
+
+nav ul .contact{
+    list-style-type: none;
+    text-decoration-color: #ffd747;
+    text-decoration-thickness: 3px; /*GROSOR LINEA*/
+    text-underline-offset: 20px; /*Distancia de alejado de la linea*/
+}
+
+nav ul a:hover{
+    font-weight: bold;
+    text-decoration-color: blue;
+}
+
+.cta-container{
+    background-color: #e9ecef;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cta-container h1{
+    font-size: 2.2em;
+}
+
+.cta-container p{
+    width: 550px;
+    font-weight: bold;
     font-size: 1.2em;
-    text-align: right;
+    margin: auto;
+}
+
+.services-container {
+    background-color: #f1f3f5;
+    padding-top: 34px;
+    padding-bottom: 34px;
     display: flex;
-    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-container div{
+    width: 30%;
+}
+
+.services-container .icono {
+    font-size: 2em;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 8px;
+}
+
+.services-container h3{
+    padding-bottom: 8px;
+}
+
+.contact-container{
+    background-color: #f8f9fa;
+    padding-top: 34px;
+    text-align: center;
+}
+
+.contact-container h2{
+    font-size: 20px;
+}
+
+.contact-container label{
+    display: grid;
+    grid-template-columns: 1fr;
     
 }

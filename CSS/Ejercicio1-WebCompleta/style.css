@@ -169,7 +169,7 @@ nav ul a:hover{
     border-bottom-color: #ffd747;
     border-width: 4px;
     width: 500px;
-    height: 30px;
+    height: 80px;
     background-color: #f1f3f5;
     margin-bottom: 10px;
 }
@@ -180,4 +180,29 @@ nav ul a:hover{
 
 .contact-container .contact-form textarea:hover{
    border-bottom-color:  blue;
+}
+
+.contact-container button:hover{
+    background-color: #343a40;
+}
+
+footer {
+    background-color: #f1f3f5;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+footer h3{
+    font-weight: bold;
+}
+
+footer small{
+    font-weight: bold;
+}
+
+footer a{
+    font-size: 2em;
+    text-decoration: none;
 }

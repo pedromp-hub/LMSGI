@@ -5,6 +5,8 @@
     color: #343a40;
 }
 
+/*--Seción Nav--*/
+
 nav{
     background-color: #f8f9fa;
     display: flex;
@@ -61,6 +63,8 @@ nav ul a:hover{
     text-decoration-color: blue;
 }
 
+/*--Seción Cta-Container--*/
+
 .cta-container{
     background-color: #e9ecef;
     padding-top: 110px;
@@ -79,6 +83,8 @@ nav ul a:hover{
     font-size: 1.2em;
     margin: auto;
 }
+
+/*--Seción Services-Container--*/
 
 .services-container {
     background-color: #f1f3f5;
@@ -103,6 +109,8 @@ nav ul a:hover{
 .services-container h3{
     padding-bottom: 8px;
 }
+
+/*--Seción Contact-Container--*/
 
 .contact-container{
     background-color: #f8f9fa;
@@ -185,6 +193,8 @@ nav ul a:hover{
 .contact-container button:hover{
     background-color: #343a40;
 }
+
+/*--Seción footer--*/
 
 footer {
     background-color: #f1f3f5;

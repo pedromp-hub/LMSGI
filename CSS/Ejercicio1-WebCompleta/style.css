@@ -118,13 +118,11 @@ nav ul a:hover{
 .contact-container label{
     display: grid;
     grid-template-columns: 1fr;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 422px;
     
-}
-
-.contact-container .dist{
-    width: 500px;
-    height: 30px;
-    background-color: #f1f3f5;
 }
 
 .contact-container button{
@@ -137,4 +135,49 @@ nav ul a:hover{
     background-color: #007bff;
     color: #f8f9fa;
     height: 30px;
+    margin-top: 10px;
+}
+
+.contact-container .dist1{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #32cd32;
+    border-width: 4px;
+    width: 500px;
+    height: 30px;
+    background-color: #f1f3f5;
+    margin-bottom: 10px;
+}
+
+.contact-container .dist2{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #8a2be2;
+    border-width: 4px;
+    width: 500px;
+    height: 30px;
+    background-color: #f1f3f5;
+    margin-bottom: 10px;
+}
+
+.contact-container .dist3{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #ffd747;
+    border-width: 4px;
+    width: 500px;
+    height: 30px;
+    background-color: #f1f3f5;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact-form input:hover{
+   border-bottom-color:  blue;
+}
+
+.contact-container .contact-form textarea:hover{
+   border-bottom-color:  blue;
 }

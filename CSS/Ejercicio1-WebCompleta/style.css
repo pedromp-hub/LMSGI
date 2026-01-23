@@ -91,7 +91,8 @@ nav ul a:hover{
     padding-top: 34px;
     padding-bottom: 34px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
@@ -101,9 +102,8 @@ nav ul a:hover{
 
 .services-container .icono {
     font-size: 2em;
-    justify-content: center;
     margin: auto;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 }
 
 .services-container h3{

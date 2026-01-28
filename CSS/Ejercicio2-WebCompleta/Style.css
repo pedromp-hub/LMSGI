@@ -1,6 +1,121 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+/*Colores Por defecto*/
 *{
     --primary-blue: #074167; /*Azul*/
     --dark-blue: #143548; /*Azul Oscuro*/
     --background-light: #ffebd9; /*Crema*/
     --hover-light: #CCB299;/*Marrón*/
+    color: var(--background-light);
+    margin: 0;
+}
+
+/*Añadir la fuente*/
+.fuente{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 5px;
+}
+
+header input{
+    transition: transform 0.25s ease;
+}
+
+header .menu{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+header .logo{
+    transition: transform 0.25s ease;
+}
+
+header .menu a{
+    text-decoration: none;
+}
+
+header .menu a:hover{
+    color: var(--hover-light);
+}
+
+header .logo:hover{
+    transform: rotate(360deg);
+}
+
+header input:hover{
+    transform: scale(1.1);
+}
+
+header .lupa:hover{
+    transform: scale(1.3);
+    color: var(--hover-light);
+}
+
+header .search button{
+    cursor: pointer;
+}
+header .search input{
+    border-radius: 4px;
+}
+
+header .lupa{
+    background-color: var(--dark-blue);
+    border: none;
+    transition: transform 0.25s ease;
+}
+
+.cta-container{
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-image: url(gato\ fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: sepia(30%);
+}
+
+.cta-container h1{
+    color: var(--primary-blue);
+    font-size: 3rem;
+    text-shadow: 8px 4px 6px var(--hover-light);
+}
+
+footer .footer-copy{
+    background-color: var(--primary-blue);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .footer-menu{
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    gap: 10px;
+    list-style-type: none;
+}
+
+footer .footer-menu a{
+    display: flex;
+    text-decoration: none;
 }

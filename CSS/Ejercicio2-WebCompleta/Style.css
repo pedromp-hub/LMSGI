@@ -20,6 +20,7 @@
     font-style: normal;
 }
 
+/*Header*/
 header{
     display: flex;
     justify-content: space-between;
@@ -45,6 +46,21 @@ header .menu a{
     text-decoration: none;
 }
 
+header .search button{
+    cursor: pointer;
+}
+
+header .search input{
+    border-radius: 4px;
+}
+
+header .lupa{
+    background-color: var(--dark-blue);
+    border: none;
+    transition: transform 0.25s ease;
+}
+
+/*HOVER*/
 header .menu a:hover{
     color: var(--hover-light);
 }
@@ -62,19 +78,7 @@ header .lupa:hover{
     color: var(--hover-light);
 }
 
-header .search button{
-    cursor: pointer;
-}
-header .search input{
-    border-radius: 4px;
-}
-
-header .lupa{
-    background-color: var(--dark-blue);
-    border: none;
-    transition: transform 0.25s ease;
-}
-
+/*Container*/
 .cta-container{
     min-height: 60vh;
     justify-content: center;
@@ -95,6 +99,7 @@ header .lupa{
     text-shadow: 8px 4px 6px var(--hover-light);
 }
 
+/*Footer*/
 footer .footer-copy{
     background-color: var(--primary-blue);
     padding-top: 40px;

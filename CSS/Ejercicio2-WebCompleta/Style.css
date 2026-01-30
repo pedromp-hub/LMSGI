@@ -78,6 +78,10 @@ header .lupa:hover{
     color: var(--hover-light);
 }
 
+H1:hover{
+    translate: 8px 4px;
+}
+
 /*Container*/
 .cta-container{
     min-height: 60vh;

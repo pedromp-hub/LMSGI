@@ -29,6 +29,9 @@ header{
     padding: 5px;
 }
 
+header nav button{
+    display: none;
+}
 header input{
     transition: transform 0.25s ease;
 }
@@ -52,6 +55,7 @@ header .search button{
 
 header .search input{
     border-radius: 4px;
+    background-color: var(--background-light);
 }
 
 header .lupa{
@@ -127,4 +131,25 @@ footer .footer-menu{
 footer .footer-menu a{
     display: flex;
     text-decoration: none;
+}
+
+/*Media Query*/
+
+@media (max-width: 800px){
+    header nav button{
+        display: block;
+        color: var(--hover-light);
+        background-color: var(--dark-blue);
+        font-size: 20px;
+        border: none;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    .footer-menu{
+        flex-direction: column;
+        align-items: center;
+    }
 }

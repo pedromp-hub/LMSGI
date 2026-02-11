@@ -148,6 +148,9 @@ footer .footer-menu a{
         display: none;
     }
 
+    header .search input{
+        display: none;
+    }
     .footer-menu{
         flex-direction: column;
         align-items: center;

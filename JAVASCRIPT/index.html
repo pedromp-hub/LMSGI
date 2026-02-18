@@ -6,17 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <label>Nombre:</label>
-    <input type="text" id="Nombre">
+    <label>Peso:</label>
+    <input type="text" id="Peso">
+    <label>Altura:</label>
+    <input type="text" id="Altura">
 
-    <button onclick="mostrarnombre()">Mostrar</button>
+    <button onclick="IMC()">Calcular</button>
     <p id="respuesta"></p>
     
     <script>
-      function mostrarnombre(){
-        const entrada = document.getElementById("Nombre")
-        const salida = document.getElementById("respuesta")
-        salida.textContent = entrada.value;
+      function IMC(){
+        const Precio = document.getElementById("Peso")
+        const Descuento = document.getElementById("Altura")
+        const respuesta = document.getElementById("respuesta")
+
+        let Peso1 = Peso.value;
+        let Altura1 = Altura.value;
+        let IMCFinal = Peso1 / (Altura1 * Altura1);
+
+        if (IMCFinal < 18.5){
+            respuesta.textContent = IMCFinal + " Bajo peso";
+        } else if (IMCFinal >= 18.5 && IMCFinal <= 24.9){
+            respuesta.textContent = IMCFinal + " Normal";
+        } else if (IMCFinal >= 25 && IMCFinal <= 29.9){
+            respuesta.textContent = IMCFinal + " Sobre peso";
+        } else if (IMCFinal >= 30.0){
+            respuesta.textContent = IMCFinal + " Obesidad";
+        }
+
+        
       }
     </script>
 </body>

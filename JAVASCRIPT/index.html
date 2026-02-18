@@ -6,8 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <label>Nombre:</label>
+    <input type="text" id="Nombre">
+
+    <button onclick="mostrarnombre()">Mostrar</button>
+    <p id="respuesta"></p>
+    
     <script>
-        alert("Hola Mundo")
+      function mostrarnombre(){
+        const entrada = document.getElementById("Nombre")
+        const salida = document.getElementById("respuesta")
+        salida.textContent = entrada.value;
+      }
     </script>
 </body>
 </html>

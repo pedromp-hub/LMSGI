@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <style>
+
+        *{
+            background-color:antiquewhite;
+        }
+
+        .imagenes {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+            padding-top: 2%;
+        }
+
+        .imagenes img{
+            width: 250px;
+            height: 250px;
+        }
+
+        #botones{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-top: 2%;
+            gap: 10px;
+        }
+
+        #botones button{
+            border-radius: 25px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagenes">
+        <img class="imagen" src="images.jpg" style="display: block;">
+        <img class="imagen" src="vistas-ciudad-de-granada.jpg" style="display: none;">
+        <img class="imagen" src="Hospital_Real_de_Granada_-_España.jpg" style="display: none;">
+    </div>
+
+    <div id="botones">
+        <button id="boton1">Imagen 1</button>
+        <button id="boton2">Imagen 2</button>
+        <button id="boton3">Imagen 3</button>
+    </div>
+
+    <script src="ejercicio1.js"></script>
+</body>
+</html>
